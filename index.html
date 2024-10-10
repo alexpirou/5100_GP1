@@ -362,7 +362,12 @@
 
     <div class="designRationale">
       <h3>Design Rationale</h3>
-      <p></p>
+      <p>We chose to represent our data with a scatterplot, with circles as the marks. We used the Module Temperature as the x-location of each point, as this is one of the independent variables. The y-location of each point is determined by the Total Energy Yield, as this is the dependent variable in our data. We also wanted to show the irradiation of each point, and chose to do so through the radius of the circles. Lastly, in order to differentiate between the two solar plants, we colored the points using the “fill” attribute, varying the color hue depending on the plant. We used an ordinal scale with a range of 2 colors because the Plant is a categorical variable with 2 possible values.<br>
+
+      <br>We utilized several visual channels to observe the influence of multiple independent factors at once, in the same graph. However, this brought some challenges with the design of our graph. First, the data for solar plant 1 has a much smaller range in total energy yields than solar plant 2. By having the data for both plants on the same scale, it is difficult to see changes in the total energy yield for plant 1 due to its small range. However, we felt that the ability to compare the plants with one another outweighed this challenge. Thus, we kept the data for both of the plants on the same graph.<br>
+        
+      <br>In addition, the values of total energy yield are clustered around certain values, with large gaps in the range of data. This leaves some y-values highly represented and others with no data points. To better observe the individual data points, we reduced the opacity of the circles to 0.25. This allows us to see any overlaps in data points, providing insight into common values for module temperature and total energy yield. To further support visibility, we added a stroke to each circle with an opacity of 0.5. The opacity of the stroke is higher than that of the circles in order to clearly distinguish between data points. However, it is reduced from its default value of 1 to avoid blocking relevant data.
+      </p>
     </div>
 
     <div class="story">
